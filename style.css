@@ -106,11 +106,15 @@ html,body{height:100%;margin:0;font-family:Inter, "Segoe UI", Roboto, Arial, san
   .brand-name{font-size:16px}
   .brand-tag{display:none}
 }
-/* Espacio lateral solo desde la sección "¿Qué es TOTEC?" hacia abajo en móviles */
-@media (max-width: 768px) {
-  .section {
-    padding-left: 16px;
-    padding-right: 16px;
+/* Ajuste: más espacio lateral en móvil desde "¿Qué es Totec?" hacia abajo */
+@media (max-width: 640px) {
+  #nosotros,
+  #porquetotec,
+  #servicios,
+  #precio,
+  #contacto {
+    padding-left: 28px;
+    padding-right: 28px;
   }
 }
 
