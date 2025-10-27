@@ -117,5 +117,23 @@ html,body{height:100%;margin:0;font-family:Inter, "Segoe UI", Roboto, Arial, san
     padding-right: 28px;
   }
 }
+/* Ajuste responsive para la sección de precio en móvil */
+@media (max-width: 640px) {
+  .price-section .price-panel {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .price-section .price-cta {
+    width: 100%;
+  }
+
+  .price-section .price-cta .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
