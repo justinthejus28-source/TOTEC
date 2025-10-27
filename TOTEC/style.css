@@ -1,0 +1,108 @@
+:root{
+  --primary:#25b896;    /* verde similar al logo */
+  --accent:#1a8f6d;
+  --whatsapp:#25D366;
+  --bg:#0f1720;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --glass: rgba(255,255,255,0.06);
+  --radius:12px;
+  --max-width:1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;color:#0b1220;background:linear-gradient(180deg,#f7fbfb,#f3f7f7);-webkit-font-smoothing:antialiased}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 20px}
+
+/* Header */
+.site-header{backdrop-filter: blur(6px);position:sticky;top:0;z-index:60;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0));border-bottom:1px solid rgba(0,0,0,0.04)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{height:48px;width:48px;object-fit:cover;border-radius:10px;border:2px solid rgba(255,255,255,0.06)}
+.brand-name{font-weight:700;color:var(--primary);display:block}
+.brand-tag{display:block;font-size:12px;color:var(--muted)}
+
+/* Nav */
+.nav{display:flex;gap:14px;align-items:center}
+.nav a{color:#142026;text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:600}
+.nav a:hover{background:rgba(0,0,0,0.04)}
+.hamburger{display:none;background:none;border:0;padding:8px;cursor:pointer}
+.hamburger span{display:block;width:22px;height:2px;background:#142026;margin:4px 0;border-radius:2px}
+
+/* HERO */
+.hero{padding:56px 0;background:linear-gradient(135deg,var(--primary),var(--accent));color:white;border-bottom-left-radius:20px;border-bottom-right-radius:20px}
+.hero-grid{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;max-width:var(--max-width);margin:0 auto;padding:20px}
+.hero-copy h1{font-size:clamp(28px,5vw,44px);margin:0 0 8px}
+.lead{font-size:1.05rem;opacity:0.95;margin:0 0 10px}
+.sublead{opacity:0.9;margin-bottom:18px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:700;cursor:pointer;border:0}
+.btn.primary{background: #051017; color:white; box-shadow: 0 8px 20px rgba(0,0,0,0.25)}
+.btn.ghost{background:transparent;color:white;border:1px solid rgba(255,255,255,0.18)}
+.btn.small{padding:8px 12px;font-size:0.95rem}
+
+/* hero card */
+.hero-card{background:rgba(255,255,255,0.12);backdrop-filter:blur(6px);padding:18px;border-radius:14px;color:white}
+.price-badge{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.08);width:fit-content;margin-bottom:12px}
+.price-badge span{font-size:13px}
+.price-badge strong{font-size:22px}
+.quick-features{list-style:none;padding:0;margin:12px 0 16px}
+.quick-features li{font-weight:600;font-size:0.95rem}
+
+/* sections */
+.section{padding:48px 0}
+.section-grid{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center}
+.text p{color:#27323a;line-height:1.6}
+.image-hero .illustration{height:220px;background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:40px;color:var(--primary)}
+
+/* highlight */
+.highlight{background:linear-gradient(180deg,#e9fbf3,#f7fffb);border-left:6px solid var(--primary);border-radius:10px}
+
+/* services */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.service-card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(15,20,32,0.06)}
+.service-card h3{margin:0 0 8px}
+.muted{color:var(--muted)}
+
+/* included list */
+.included{margin-top:18px;background:linear-gradient(180deg,#fff,#fbfffb);padding:14px;border-radius:10px}
+.included-list{list-style:disc;padding-left:20px;margin:10px 0 0}
+
+/* price panel */
+.price-section .price-panel{display:flex;align-items:center;justify-content:space-between;padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#f7fff9);box-shadow:0 8px 24px rgba(15,20,32,0.06)}
+.price-section .muted{font-weight:700;color:#0b1220}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.contact-info p{margin:8px 0}
+.contact-actions{display:flex;gap:10px;margin-top:12px}
+.contact-form form{display:flex;flex-direction:column;gap:10px}
+.contact-form label{display:flex;flex-direction:column;font-size:14px}
+.contact-form input,.contact-form textarea{padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.08)}
+.form-actions{display:flex;gap:10px;align-items:center}
+.form-note{font-size:12px;color:var(--muted);margin-top:6px}
+
+/* footer */
+.site-footer{padding:18px 0;background:#051017;color:white;margin-top:36px;border-top-left-radius:8px;border-top-right-radius:8px}
+.footer-grid{display:flex;justify-content:space-between;align-items:center;gap:20px}
+
+/* whatsapp float */
+.whatsapp-float{position:fixed;right:18px;bottom:18px;background:var(--whatsapp);width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(37,211,102,0.18);text-decoration:none;z-index:120}
+.whatsapp-float svg{width:22px;height:22px}
+
+/* responsive */
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .section-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .header-inner{gap:12px}
+  .nav{display:none}
+  .hamburger{display:block}
+}
+
+@media(max-width:640px){
+  .services-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .brand-name{font-size:16px}
+  .brand-tag{display:none}
+}
